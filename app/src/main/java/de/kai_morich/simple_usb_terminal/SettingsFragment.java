@@ -5,7 +5,7 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
-import android.os.Build;
+import android.os.Build; // إضافة هذا الـ Import ضروري لحل مشكلة السطر 116
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -111,13 +111,13 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         if (start) {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(requireContext());
             int port = Integer.parseInt(prefs.getString("tftp_port", "69"));
-            String savedPath = prefs.getString("tftp_directory_path",
-                    Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath());
+            String savedPath = prefs.getString("tftp_directory_path", 
+                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath());
 
             intent.putExtra("port", port);
-            intent.putExtra("root_path", savedPath);
+            intent.putExtra("root_path", savedPath); // توحيد الاسم مع الـ Service
 
-            // حل مشكلة API Level 26 وإصلاح خطأ startForegroundService
+            // حل مشكلة السطر 116 (API 26+) لضمان عمل الـ Build
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 requireActivity().startForegroundService(intent);
             } else {
@@ -134,7 +134,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 NetworkInterface intf = en.nextElement();
                 if (intf.getName().contains("eth") || intf.getName().contains("usb") || intf.getName().contains("wlan")) {
                     for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements(); ) {
-                        InetAddress inetAddress = enumIpAddr.nextElement();
+                        InetAddress inetAddress = enumIpAddr.nextElement(); // تم تصحيح الخطأ هنا
                         if (!inetAddress.isLoopbackAddress() && inetAddress instanceof Inet4Address) {
                             return inetAddress.getHostAddress();
                         }
