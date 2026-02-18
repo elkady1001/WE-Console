@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory android:title="TFTP Server Management">
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="tftp_server_enabled"
+            android:title="Enable Server"
+            android:summary="Starts the background TFTP service"
+            android:defaultValue="false" />
+
+        <androidx.preference.EditTextPreference
+            android:key="tftp_port"
+            android:title="Listening Port"
+            android:defaultValue="6969"
+            android:inputType="number"
+            app:useSimpleSummaryProvider="true" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory android:title="Files and Network">
+        <androidx.preference.Preference
+            android:key="tftp_directory"
+            android:title="Root Directory"
+            android:summary="Choose where to save backups" />
+
+        <androidx.preference.Preference
+            android:key="tftp_detect_ip"
+            android:title="Detect IP"
+            android:summary="Show current mobile IP" />
+
+        <androidx.preference.Preference
+            android:key="tftp_ping_test"
+            android:title="Ping Test"
+            android:summary="Check connectivity with router" />
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

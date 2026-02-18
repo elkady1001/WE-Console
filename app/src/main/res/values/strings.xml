@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">WE Console</string>
+    <string name="app_title">WE Console Pro</string>
+    <string name="menu_drawer_open">Menu</string>
+    <string name="menu_drawer_close">Close</string>
+
+    <string name="devices">USB Devices</string>
+    <string name="refresh">Refresh</string>
+    <string name="clear">Clear</string>
+    <string name="send">Send</string>
+    <string name="save_log">Save Log</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="about_title">WE Console Pro</string>
+    <string name="about_dev_label">Designed &amp; Developed by:</string>
+    <string name="about_dev_name">Mahmoud Elkady</string>
+    <string name="about_job_title">Network Operation &amp; Maintenance Specialist</string>
+    <string name="about_phone">015552399521</string>
+    <string name="about_version">Version 1.0.0</string>
+
+    <string name="baud_rate">Baud rate</string>
+    <string name="data_bits">Data bits</string>
+    <string name="parity">Parity</string>
+    <string name="stop_bits">Stop bits</string>
+    <string name="control_lines">Control lines</string>
+    <string name="flow_control">Flow control</string>
+    <string name="break_duration">BREAK duration</string>
+    <string name="font_size">Font size</string>
+    <string name="font_style">Font style</string>
+    <string name="charset">Charset</string>
+    <string name="display">Display mode</string>
+    <string name="newline">Newline</string>
+    <string name="edit_mode">Edit mode</string>
+    <string name="line_delay">Line delay</string>
+    <string name="local_echo">Local echo</string>
+    <string name="clear_input">Clear input</string>
+    <string name="macro_buttons">Macro buttons</string>
+    <string name="keep_screen_on">Keep screen on</string>
+    <string name="show_notification">Show notification</string>
+</resources>

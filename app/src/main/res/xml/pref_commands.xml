@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory android:title="Configuration Backup">
+        <androidx.preference.Preference android:key="export_commands" android:title="Export to File" android:summary="Save configuration to JSON" app:icon="@android:drawable/ic_menu_save" />
+        <androidx.preference.Preference android:key="import_commands" android:title="Import from File" android:summary="Restore from JSON backup" app:icon="@android:drawable/ic_menu_upload" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory android:id="@+id/vendors_category" android:title="Network Vendors Database">
+        <androidx.preference.Preference
+            android:key="add_new_vendor"
+            android:title="+ Add New Network Vendor"
+            android:summary="Add ZTE, Nokia, or Aethra manually" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory android:title="Macros Setup">
+        <androidx.preference.ListPreference android:key="macro_m1_config" android:title="M1 Button Map" app:useSimpleSummaryProvider="true" android:entries="@array/macro_options" android:entryValues="@array/macro_values" android:defaultValue="custom" />
+        <androidx.preference.EditTextPreference android:key="macro_m1_custom" android:title="M1 Manual Command" android:dependency="macro_m1_config" app:useSimpleSummaryProvider="true" />
+    </androidx.preference.PreferenceCategory>
+</androidx.preference.PreferenceScreen>

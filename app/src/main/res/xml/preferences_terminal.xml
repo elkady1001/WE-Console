@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.preference.Preference
+        android:title="Serial"
+        android:summary="Baud rate, Data bits, Parity, ..."
+        android:key="pref_serial_screen" />
+
+    <androidx.preference.Preference
+        android:title="Terminal"
+        android:summary="Font, Charset, Display mode, ..."
+        android:key="pref_terminal_screen" />
+
+    <androidx.preference.Preference
+        android:title="Receive"
+        android:summary="Newline, ..."
+        android:key="pref_receive_screen" />
+
+    <androidx.preference.Preference
+        android:title="Send"
+        android:summary="Newline, Edit mode, Local echo, ..."
+        android:key="pref_send_screen" />
+
+    <androidx.preference.Preference
+        android:title="Misc"
+        android:summary="Macro buttons, Notifications, ..."
+        android:key="pref_misc_screen" />
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.ListPreference
+        android:key="newline_receive"
+        android:title="Newline"
+        app:useSimpleSummaryProvider="true"
+        android:entries="@array/newline_names"
+        android:entryValues="@array/newline_values"
+        android:defaultValue="\r\n" />
+</androidx.preference.PreferenceScreen>

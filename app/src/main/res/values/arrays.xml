@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="display_options">
+        <item>Terminal</item>
+        <item>Text</item>
+        <item>Hex</item>
+    </string-array>
+    <string-array name="display_values">
+        <item>terminal</item>
+        <item>text</item>
+        <item>hex</item>
+    </string-array>
+
+    <string-array name="newline_names">
+        <item>CR+LF</item>
+        <item>CR</item>
+        <item>LF</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="newline_values">
+        <item>\r\n</item>
+        <item>\r</item>
+        <item>\n</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="data_bits">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="parity">
+        <item>None</item>
+        <item>Odd</item>
+        <item>Even</item>
+        <item>Mark</item>
+        <item>Space</item>
+    </string-array>
+    <string-array name="parity_values">
+        <item>none</item>
+        <item>odd</item>
+        <item>even</item>
+        <item>mark</item>
+        <item>space</item>
+    </string-array>
+
+    <string-array name="stop_bits">
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="font_sizes">
+        <item>10</item><item>12</item><item>14</item><item>16</item><item>18</item><item>20</item>
+    </string-array>
+    <string-array name="font_styles">
+        <item>Monospace</item>
+        <item>Sans Serif</item>
+        <item>Serif</item>
+    </string-array>
+    <string-array name="font_styles_values">
+        <item>monospace</item>
+        <item>sans</item>
+        <item>serif</item>
+    </string-array>
+
+    <string-array name="charsets">
+        <item>UTF-8</item>
+        <item>US-ASCII</item>
+        <item>ISO-8859-1</item>
+    </string-array>
+
+    <string-array name="baud_rates">
+        <item>1200</item><item>2400</item><item>4800</item><item>9600</item>
+        <item>19200</item><item>38400</item><item>57600</item><item>115200</item>
+    </string-array>
+
+    <string-array name="macro_options">
+        <item>Custom Command (Manual)</item>
+        <item>Cisco Quick Command</item>
+        <item>Juniper Quick Command</item>
+        <item>Huawei Quick Command</item>
+        <item>Aruba Quick Command</item>
+        <item>Nokia Quick Command</item>
+    </string-array>
+
+    <string-array name="macro_values">
+        <item>custom</item>
+        <item>cisco</item>
+        <item>juniper</item>
+        <item>huawei</item>
+        <item>aruba</item>
+        <item>nokia</item>
+    </string-array>
+    <string-array name="flow_control_names">
+        <item>None</item>
+        <item>RTS/CTS</item>
+        <item>DTR/DSR</item>
+        <item>XON/XOFF</item>
+    </string-array>
+
+    <string-array name="flow_control_values">
+        <item>none</item>
+        <item>rts_cts</item>
+        <item>dtr_dsr</item>
+        <item>xon_xoff</item>
+    </string-array>
+</resources>

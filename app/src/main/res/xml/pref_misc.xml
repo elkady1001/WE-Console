@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.SwitchPreferenceCompat
+        android:key="keep_screen_on"
+        android:title="Keep screen on"
+        android:defaultValue="false" />
+
+    <androidx.preference.SwitchPreferenceCompat
+        android:key="show_notification"
+        android:title="Show notification"
+        android:defaultValue="true" />
+</androidx.preference.PreferenceScreen>

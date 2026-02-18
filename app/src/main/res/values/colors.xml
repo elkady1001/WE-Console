@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_we">#5C2D91</color>
+    <color name="black_bg">#121212</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="colorRecieveText">#3399ff</color>
+    <color name="colorSendText">#33ff33</color>
+    <color name="colorStatusText">#999999</color>
+
+    <color name="colorPrimary">@color/purple_we</color>
+    <color name="colorPrimaryDark">#401E66</color>
+    <color name="colorAccent">@color/purple_we</color>
+</resources>

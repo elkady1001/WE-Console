@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <ToggleButton android:id="@+id/controlRts" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:textOff="RTS" android:textOn="RTS" android:textSize="11sp" android:textColor="@color/white" />
+        <ToggleButton android:id="@+id/controlCts" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:enabled="false" android:textOff="CTS" android:textOn="CTS" android:textSize="11sp" />
+        <ToggleButton android:id="@+id/controlDtr" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:textOff="DTR" android:textOn="DTR" android:textSize="11sp" android:textColor="@color/white" />
+        <ToggleButton android:id="@+id/controlDsr" android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:enabled="false" android:textOff="DSR" android:textOn="DSR" android:textSize="11sp" />
+        <ToggleButton android:id="@+id/controlCd"  android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:enabled="false" android:textOff="CD" android:textOn="CD" android:textSize="11sp" />
+        <ToggleButton android:id="@+id/controlRi"  android:layout_width="0dp" android:layout_height="36dp" android:layout_weight="1" android:enabled="false" android:textOff="RI" android:textOn="RI" android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/receive_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorRecieveText"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A1A1A"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+        <EditText
+            android:id="@+id/send_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type command..."
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/purple_we"
+            android:textColorHint="#666666" />
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_send"
+            app:tint="@color/purple_we" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="4dp">
+            <Button android:id="@+id/btnCommands" android:layout_width="wrap_content" android:layout_height="42dp"
+                android:text="Commands" android:backgroundTint="@color/purple_we" android:textSize="10sp" android:layout_margin="2dp" />
+            <Button android:id="@+id/macro1" android:layout_width="60dp" android:layout_height="42dp" android:text="M1" android:textSize="10sp" android:layout_margin="2dp" />
+            <Button android:id="@+id/macro2" android:layout_width="60dp" android:layout_height="42dp" android:text="M2" android:textSize="10sp" android:layout_margin="2dp" />
+            <Button android:id="@+id/macro3" android:layout_width="60dp" android:layout_height="42dp" android:text="M3" android:textSize="10sp" android:layout_margin="2dp" />
+            <Button android:id="@+id/macro4" android:layout_width="60dp" android:layout_height="42dp" android:text="M4" android:textSize="10sp" android:layout_margin="2dp" />
+            <Button android:id="@+id/macro5" android:layout_width="60dp" android:layout_height="42dp" android:text="M5" android:textSize="10sp" android:layout_margin="2dp" />
+            <Button android:id="@+id/macro6" android:layout_width="60dp" android:layout_height="42dp" android:text="M6" android:textSize="10sp" android:layout_margin="2dp" />
+            <Button android:id="@+id/macro7" android:layout_width="60dp" android:layout_height="42dp" android:text="M7" android:textSize="10sp" android:layout_margin="2dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

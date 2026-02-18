@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/clear"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="Clear Terminal"
+        app:showAsAction="always" />
+
+    <group android:id="@+id/group_network_tools">
+        <item
+            android:id="@+id/menu_flash_browser"
+            android:title="Flash Browser 📂"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/menu_log"
+            android:title="Log to File (.txt)"
+            android:checkable="true"
+            app:showAsAction="never" />
+    </group>
+
+    <group android:id="@+id/group_serial_control">
+        <item
+            android:id="@+id/sendBreak"
+            android:title="Send BREAK (Cisco)"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/controlLines"
+            android:title="Control Lines (RTS/DTR)"
+            android:checkable="true"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/flowControl"
+            android:title="Flow Control Settings"
+            app:showAsAction="never" />
+    </group>
+
+    <group android:id="@+id/group_display_settings">
+        <item
+            android:id="@+id/hex"
+            android:title="HEX Mode"
+            android:checkable="true"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/newline"
+            android:title="Newline Format"
+            app:showAsAction="never" />
+    </group>
+
+    <item
+        android:id="@+id/backgroundNotification"
+        android:title="Background Notification"
+        android:checkable="true"
+        app:showAsAction="never" />
+
+</menu>
