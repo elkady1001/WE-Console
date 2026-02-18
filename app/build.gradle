@@ -3,6 +3,8 @@ plugins {
 }
 
 android {
+    // توحيد الـ namespace ليتوافق مع هيكل المشروع
+    namespace 'de.kai_morich.simple_usb_terminal'
     compileSdkVersion 34
 
     defaultConfig {
@@ -26,18 +28,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    namespace 'de.kai_morich.simple_usb_terminal'
 }
 
 dependencies {
-    // ربط النسخة 3.12.0 اللي في مجلد libs عندك حالياً
+    // استخدام مسار نسبي (Relative Path) لنسخة 3.12.0 التي تستخدمها لحل خطأ "Transform's input file does not exist"
+    implementation files('libs/commons-net-3.12.0.jar')
 
-    // المكتبات الأساسية بدون تكرار
+    // المكتبات الأساسية بدون أي تكرار لمنع خطأ الـ Conflict والـ Duplicate Class
     implementation 'com.github.mik3y:usb-serial-for-android:3.8.0'
     implementation 'androidx.preference:preference:1.2.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation fileTree(dir: 'C:\\Users\\Elkady\\Downloads\\New\\WE-Console\\app\\libs', include: ['*.aar', '*.jar'], exclude: [])
+
+    // ملاحظة: تم حذف سطر "fileTree" وأي مسارات تبدأ بـ C:\Users لضمان استقرار الـ Build
 }
